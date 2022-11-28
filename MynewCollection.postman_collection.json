@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "c853245e-c755-403c-bb11-121ee9501c7c",
+		"name": "MynewCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24345033"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":\"bandikost\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
