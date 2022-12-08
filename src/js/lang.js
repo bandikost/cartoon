@@ -258,6 +258,7 @@ if (window.addEventListener) {
                 saturn: "- Сатурн",
                 mars: "- Марс",
                 uran: "- Уран",
+                subscribe: "Подписаться",
                 
             });
             languative.modifyDictionary("en", {
@@ -282,6 +283,7 @@ if (window.addEventListener) {
                 saturn: "- Saturn",
                 mars: "- Mars",
                 uran: "- Uran",
+                subscribe: "Subscribe",
             });
 
 

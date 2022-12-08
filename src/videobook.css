@@ -2,7 +2,7 @@
     line-height: 1.6;
     background-color: white;
     margin: 0 auto;
-   
+    font-family: 'Nerko One', cursive;
 }
 
 html {
@@ -380,7 +380,7 @@ li {
 .contacts__language {
     display: flex;
     margin: 0 5px;
-    max-width: 190px;
+    width: 192px;
 }
 
 .english-hov {
@@ -413,7 +413,7 @@ li {
     color: white;
 }
 .back {
-    padding-bottom: 240px;
+    padding-bottom: 265px;
     position: relative;
     background: url(./image/intro/1610164174_22-p-fon-multyashnii-kosmos-41.jpg) center no-repeat;
 }
@@ -472,7 +472,7 @@ li {
 
 .slide-item {
     position: relative;
-    margin: 40px 15px;
+    margin: 0px 15px;
     color: white;
     display: flex;
     text-align: center;
@@ -481,11 +481,46 @@ li {
     height: 150px;
     border-radius: 10px;
     z-index: 3;
+    background-color: #000;
 }
 
-.slide-item:nth-child(3n+1) { background-color: #121212;}
-.slide-item:nth-child(3n+2) { background-color: #6556b2;}
-.slide-item:nth-child(3n+3) { background-color: #692727;}
+.slide-item2,
+.slide-item5,
+.slide-item8 {
+    color: #000;
+    font-weight: 900;
+    background: url(../src/image/videobook/IMG_2612.PNG) center no-repeat;
+}
+
+.slide-item3,
+.slide-item6 {
+    color: #000;
+    font-weight: 900;
+    background: url(../src/image/videobook/IMG_2608.JPG) center no-repeat;
+}
+.slide-item4,
+.slide-item7 {
+    color: #000;
+    font-weight: 900;
+    background: url(../src/image/videobook/IMG_2609.PNG) center no-repeat;
+}
+
+
+.products__point {
+    height: 150px;
+    text-decoration: none;
+}
+
+.pay__products {
+    position: relative;
+    font-size: 19px;
+    letter-spacing: -0.2px;
+    padding: 0 10px;
+    top: -5px;
+    z-index: 3;
+    text-decoration: none;
+}
+
 
 
 .slide-watch {
@@ -496,7 +531,7 @@ li {
 .slide-dis {
     position: relative;
     width: 100%;
-    top: -25px;
+    top: 25px;
     left: 26px;
     color: black;
     font-size: 18px;
@@ -509,7 +544,7 @@ li {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.1px;
-    margin-top: 8px;
+    margin-top: 2px;
 }
 
 
@@ -549,7 +584,9 @@ li {
 }
 
 
-
+.products-grid__item {
+    padding-bottom: 60px;
+}
 
 .btn-center {
 	grid-column: 2 / 4 span;
@@ -717,7 +754,7 @@ i {
     transition: visibility 0s, opacity 0.5s linear;
 }
 
-.fixed__text{
+.fixed__text {
     border-radius: 24px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
     background-color: #fff;
@@ -733,6 +770,7 @@ i {
     font-size: 14px;
     visibility: hidden;
     opacity: 0;
+    font-family: 'Nerko One';
     transition: visibility 0s, opacity 0.5s linear;
 }
 
