@@ -259,6 +259,8 @@ if (window.addEventListener) {
                 mars: "- Марс",
                 uran: "- Уран",
                 subscribe: "Подписаться",
+                paymethod : "Оплатите подписку, чтобы видеть дальнешие серии",
+                upload : "Загрузить еще",
                 
             });
             languative.modifyDictionary("en", {
@@ -284,6 +286,8 @@ if (window.addEventListener) {
                 mars: "- Mars",
                 uran: "- Uran",
                 subscribe: "Subscribe",
+                paymethod : "Pay for a subscription to see the next episodes",
+                upload : "Upload more",
             });
 
 
