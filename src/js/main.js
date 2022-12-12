@@ -46,3 +46,7 @@ showMore.addEventListener('click', () => {
 		showMore.style.display = 'none';
 	}
 });
+
+
+
+

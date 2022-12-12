@@ -117,9 +117,6 @@ h1, h2, h3, h4, h5, h6 {
     src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Cheee_Variable1.woff2");
 }
 .Rena {
-    font-family: "Chee Bleed";
-    font-variation-settings: "temp" 1000;
-    animation: variation 5s ease infinite alternate-reverse;
     letter-spacing: 1px;
     color: black;
     margin: 0;
@@ -412,20 +409,13 @@ li {
             /* Второй блок */
 
 
-.section {
-    padding: 0px 0px 50px 0px;
-    margin: 0 auto;
-}
+
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
     height: 100vh;
-    background: url(../src/image/slider/upperWaveDesktop.svg) repeat-x top center, url(../src/image/intro/1610164174_22-p-fon-multyashnii-kosmos-41.jpg) center no-repeat;
-    padding-top: 66px;
-    padding-bottom: 87px; 
+    padding-bottom: 265px;
+    position: relative;
+    background: url(./image/intro/1610164174_22-p-fon-multyashnii-kosmos-41.jpg) center no-repeat;
 }
 
 
@@ -434,6 +424,8 @@ li {
     padding: 0;
     margin-left: 30px;
     max-width: 1200px;
+    position: relative;
+    top: 300px;
 }
   
 .carousel-track {
@@ -627,6 +619,45 @@ i {
     border-radius: 10px;
     z-index: 3;
 }
+.products__point {
+    height: 150px;
+    text-decoration: none;
+}
+.products-grid {
+    padding: 0;
+    margin-top: 100px;
+	grid-column: 3 span;
+	display: grid;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(3, 1fr);
+}
+
+
+.products-grid__item {
+    width: 100%;
+}
+
+.btn-center {
+	grid-column: 2 / 4 span;
+	text-align: center;
+}
+
+.products-grid__item:nth-child(n + 4) {
+	display: none;
+}
+
+.products-grid__item.is-visible {
+	display: block;
+}
+
+.pay__products {
+    color: white;
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 15px;
+}
+
 
 .slider-item:nth-child(3n+1) { background-color: #121212; min-width: 550px;}
 .slider-item:nth-child(3n+2) { background-color: #6556b2; min-width: 550px;}
@@ -717,52 +748,40 @@ i {
 
 
 .contacts {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 250px;
     background: url(../src/image/slider/upperWaveDesktop.svg) repeat-x top center, yellow repeat top center/contain;
-    padding-top: 75px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-}
-
-.contacts__address {
-    margin-left: 20px;
-    display: flex;
-    text-align: left;
+    height: 250px;
+    padding-bottom: 55px;
+    position: relative;
+    width: 100%;
 }
 
 .contacts__inner {
-    display: flex;
     margin-top: -20px;
+}
+
+.contacts__soc_pos {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.contacts__number {
+    display: flex;
     justify-content: center;
    
 }
 
-.contacts__number {
-    display: block;
-    margin-right: 100px;
-   
-}
-
 .contacts__address-1 {
-    margin: 20px 0px;
-}
-
-
-.contacts__inner-second {
-    display: flex;
-    justify-content: flex-end;  
-    margin-top: -60px;
-    margin-right: 200px;
-    margin-left: 100px;
+    margin: 0px 20px;
 }
 
 .contacts__soc {
-    margin: 0 10px;
+    margin: 0 40px;
+}
+
+.contacts__soc_container {
+     position: relative;
+     top: 100px;
 }
 
 
@@ -803,6 +822,7 @@ i {
     font-size: 14px;
     visibility: hidden;
     opacity: 0;
+    font-family: 'Nerko One';
     transition: visibility 0s, opacity 0.5s linear;
 }
 

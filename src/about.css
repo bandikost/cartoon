@@ -116,9 +116,6 @@ h1, h2, h3, h4, h5, h6 {
     src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Cheee_Variable1.woff2");
 }
 .Rena {
-    font-family: "Chee Bleed";
-    font-variation-settings: "temp" 1000;
-    animation: variation 5s ease infinite alternate-reverse;
     letter-spacing: 1px;
     color: black;
     margin: 0;
@@ -421,6 +418,7 @@ li {
 
 
 .back {
+    padding-bottom: 100px;
     background: url(../src/image/intro/1610164174_22-p-fon-multyashnii-kosmos-41.jpg) center no-repeat;
 }
 
@@ -478,6 +476,8 @@ li {
 }
 
 .general__inner {
+    position: relative;
+    top: 85px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -512,55 +512,54 @@ li {
 
 
 
-.contacts {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 3rem;
-    height: 250px;
-    background: url(../src/image/slider/upperWaveDesktop.svg) repeat-x top center, yellow repeat top center/contain;
-    padding-top: 75px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-}
 
-.contacts__address {
-    margin-left: 20px;
-    display: flex;
-    text-align: left;
-}
+            /* Шестой блок */
 
-.contacts__inner {
-    display: flex;
-    margin-top: -20px;
-    justify-content: center;
-   
-}
-
-.contacts__number {
-    display: block;
-    margin-right: 100px;
-   
-}
-
-.contacts__address-1 {
-    margin: 20px 0px;
-}
-
-
-.contacts__inner-second {
-    display: flex;
-    justify-content: flex-end;  
-    margin-top: -60px;
-    margin-right: 200px;
-    margin-left: 100px;
-}
-
-.contacts__soc {
-    margin: 0 10px;
-}
+            .contacts__title {
+                margin: 50px;
+                font-weight: 700;
+                font-size: 22px;
+                font-family: 'Alkalami';
+            }
+            
+            
+            
+            .contacts {
+                background: url(../src/image/slider/upperWaveDesktop.svg) repeat-x top center, yellow repeat top center/contain;
+                height: 250px;
+                padding-bottom: 55px;
+                position: relative;
+                width: 100%;
+            }
+            
+            .contacts__inner {
+                margin-top: -20px;
+            }
+            
+            .contacts__soc_pos {
+                display: flex;
+                margin-top: 60px;
+                justify-content: center;
+            }
+            
+            .contacts__number {
+                display: flex;
+                justify-content: center;
+               
+            }
+            
+            .contacts__address-1 {
+                margin: 0px 20px;
+            }
+            
+            .contacts__soc {
+                margin: 0 40px;
+            }
+            
+            .contacts__soc_container {
+                 position: relative;
+                 top: 100px;
+            }
 
 
 
