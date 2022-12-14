@@ -685,7 +685,7 @@ i {
             
             
             .contacts {
-                background: url(../src/image/slider/upperWaveDesktop.svg) repeat-x top center, yellow repeat top center/contain;
+                background: url(../src/image/slider/upperWaveDesktop.svg) repeat-x top center, white repeat top center/contain;
                 height: 250px;
                 padding-bottom: 55px;
                 position: relative;
