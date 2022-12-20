@@ -1,0 +1,279 @@
+
+.contacts__title {
+    margin: 50px;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Alkalami';
+}
+
+
+
+             /* Шестой блок */
+
+.contacts__title {
+    margin: 50px;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Alkalami';
+}
+
+
+
+.contacts {
+    background: url(../src/image/slider/upperWaveDesktop.svg) repeat-x top center, url(../src/image/slider/downWaveDesktop.svg) repeat-x bottom center, white repeat top center/contain;
+    height: 411px;
+    position: relative;
+    width: 100%;
+}
+
+.contacts__inner {
+    margin-top: -20px;
+}
+
+.contacts__soc_pos {
+    display: flex;
+    position: relative;
+    top: 120px;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+.contacts__number {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.contacts__address-1 {
+    margin: 0px 20px;
+}
+
+.contacts__soc {
+    margin: 0 11px;
+    height: 20px;
+}
+
+.contacts__soc_container {
+     position: relative;
+     top: 100px;
+}
+
+.contacts__img {
+    position: relative;
+    top: -80px;
+    left: -25px;
+}
+
+
+
+.fixed__soc {
+    position: fixed;
+    top: 130px;
+    left: 30px;
+    z-index: 1000;
+}
+
+.fixed__icons {
+    margin: 20px 0px;
+    display: block;
+}
+
+
+.fixed__touch:hover .fixed__text {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.fixed__text {
+    border-radius: 24px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    background-color: #fff;
+    color: #121212;
+    position: absolute;
+    width: 155px;
+    height: 48px;
+    margin-top: -5px;
+    z-index: -1;
+    margin-left: -5px;
+    padding-left: 52px;
+    line-height: 48px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'Nerko One';
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+
+.fixed__img-ok {
+    background-image: url(../src/image/fixed/ok.svg);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    -webkit-border-style: solid;
+    -webkit-border-width: 0px;
+    -webkit-border-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 50%;
+    -webkit-background-size: cover;
+    -webkit-background-position: center;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.fixed__img-ok:hover {
+    transition: all .4s ease;
+    background-image: url(../src/image/fixed/ok-hover.svg);
+}
+
+
+.fixed__img-vk {
+    background-image: url(../src/image/fixed/vk.svg);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    -webkit-border-style: solid;
+    -webkit-border-width: 0px;
+    -webkit-border-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 50%;
+    -webkit-background-size: cover;
+    -webkit-background-position: center;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.fixed__img-vk:hover {
+    transition: all .4s ease;
+    background-image: url(../src/image/fixed/vk-hover.svg);
+}
+
+.fixed__img-tg {
+    background-image: url(../src/image/fixed/telegram.svg);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    -webkit-border-style: solid;
+    -webkit-border-width: 0px;
+    -webkit-border-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 50%;
+    -webkit-background-size: cover;
+    -webkit-background-position: center;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.fixed__img-tg:hover {
+    transition: all .4s ease;
+    background-image: url(../src/image/fixed/telegram-hover.svg);
+}
+
+.fixed__img-tik_tok {
+    background-image: url(../src/image/fixed/tik-tok.svg);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    -webkit-border-style: solid;
+    -webkit-border-width: 0px;
+    -webkit-border-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 50%;
+    -webkit-background-size: cover;
+    -webkit-background-position: center;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+
+.fixed__img-viber {
+    background-image: url(../src/image/fixed/viber.svg);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    -webkit-border-style: solid;
+    -webkit-border-width: 0px;
+    -webkit-border-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 50%;
+    -webkit-background-size: cover;
+    -webkit-background-position: center;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.fixed__img-viber:hover {
+    transition: all .4s ease;
+    background-image: url(../src/image/fixed/viber-hover.svg);
+}
+
+.fixed__img-yo {
+    background-image: url(../src/image/fixed/youtube.svg);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    -webkit-border-style: solid;
+    -webkit-border-width: 0px;
+    -webkit-border-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 50%;
+    -webkit-background-size: cover;
+    -webkit-background-position: center;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.fixed__img-yo:hover {
+    transition: all .4s ease;
+    background-image: url(../src/image/fixed/youtube-hover.svg);
+}
+

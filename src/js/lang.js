@@ -19,7 +19,11 @@ var languative;
         },
         en: {
             _id: "en",
-            _name: "Deutsche - German"
+            _name: "Английский - English"
+        },
+        es: {
+            _id: "es",
+            _name: "Испанский - Spanish"
         }
     };
 
@@ -261,7 +265,8 @@ if (window.addEventListener) {
                 subscribe: "Подписаться",
                 paymethod : "Оплатите подписку, чтобы видеть дальнешие серии",
                 upload : "Загрузить еще",
-                
+                language: "Язык",
+                menu : "Меню",
             });
             languative.modifyDictionary("en", {
                 Title: "General",
@@ -271,7 +276,7 @@ if (window.addEventListener) {
                 video: "Videobook",
                 planets: "Planets",
                 audiobook: "Audiobook",
-                Rena: "Renanyo",
+                Rena: "Renanao",
                 space: "SpaceWords",
                 product: "Product",
                 contact: "Contacts",
@@ -288,8 +293,12 @@ if (window.addEventListener) {
                 subscribe: "Subscribe",
                 paymethod : "Pay for a subscription to see the next episodes",
                 upload : "Upload more",
+                language: "Language",
+                menu : "Menu",
             });
-
+            languative.modifyDictionary("es", {
+               
+            });
 
 
 

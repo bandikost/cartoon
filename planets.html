@@ -2,8 +2,12 @@
     <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
     <!--link-->
       <link rel="stylesheet" href="src/planets.css">
+      <link rel="stylesheet" href="src/header.css">
+      <link rel="stylesheet" href="src/footer.css">
       <link rel="shortcut icon" href="favicon.ico" type="image/png">
-      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
       <title class="planetpage" key="planetpage">Планеты</title>
     </head> 
     <body style="margin:0">
@@ -22,7 +26,7 @@
                 }
               </style>
             <li>
-              <a class="nav__link about" data-phrase-id="about" href="about.html">О сказке</a>
+              <a class="nav__link about" data-phrase-id="about" href="about.html" style="margin-left: 0;">О сказке</a>
             </li>
             <li>
               <a class="nav__link video" data-phrase-id="video" href="videobook.html">Видеокниги</a>
@@ -53,73 +57,76 @@
             <li>
               <a class="nav__link contact" href="#sec-1" data-phrase-id="contact">Контакты</a>
             </li>
-
             <li>
-
-            <div class="svg-size">
-
-                <a href="#openModal"><svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" d="M5 7a5 5 0 116.192 4.857A2 2 0 0013 13h1a3 3 0 013 3v2h-2v-2a1 1 0 00-1-1h-1a3.99 3.99 0 01-3-1.354A3.99 3.99 0 017 15H6a1 1 0 00-1 1v2H3v-2a3 3 0 013-3h1a2 2 0 001.808-1.143A5.002 5.002 0 015 7zm5 3a3 3 0 110-6 3 3 0 010 6z" clip-rule="evenodd"></path></g></svg>
+              <div class="action">
+                <div class="svg-size" onclick="menuToggle();" onclick="menuToggles();">                 
+                  <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" d="M5 7a5 5 0 116.192 4.857A2 2 0 0013 13h1a3 3 0 013 3v2h-2v-2a1 1 0 00-1-1h-1a3.99 3.99 0 01-3-1.354A3.99 3.99 0 017 15H6a1 1 0 00-1 1v2H3v-2a3 3 0 013-3h1a2 2 0 001.808-1.143A5.002 5.002 0 015 7zm5 3a3 3 0 110-6 3 3 0 010 6z" clip-rule="evenodd"></path></g></svg>
                   <g>
                     <path fill-rule="evenodd" d="M5 7a5 5 0 116.192 4.857A2 2 0 0013 13h1a3 3 0 013 3v2h-2v-2a1 1 0 00-1-1h-1a3.99 3.99 0 01-3-1.354A3.99 3.99 0 017 15H6a1 1 0 00-1 1v2H3v-2a3 3 0 013-3h1a2 2 0 001.808-1.143A5.002 5.002 0 015 7zm5 3a3 3 0 110-6 3 3 0 010 6z" clip-rule="evenodd"></path>
                   </g>
-                </a>
-
-                <div id="openModal" class="modal">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-
-                      <div class="modal-header">
-                        <h3 class="modal-title">Доп. возможности</h3>
-                        <a href="#close" title="Close" class="close">×</a>
-                      </div>
-
-                      <div class="modal-body">    
-                        <div class="language-modal ">
-                          <div class="language-modal-pos">
-                            <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" d="M10 2c4.415 0 8 3.585 8 8s-3.585 8-8 8-8-3.585-8-8 3.585-8 8-8zm5.917 9a6.015 6.015 0 01-3.584 4.529A10 10 0 0013.95 11h1.967zm0-2a6.015 6.015 0 00-3.584-4.529A10 10 0 0113.95 9h1.967zm-3.98 0A8.002 8.002 0 0010 4.708 8.002 8.002 0 008.063 9h3.874zm-3.874 2A8.002 8.002 0 0010 15.292 8.002 8.002 0 0011.937 11H8.063zM6.05 11a10 10 0 001.617 4.529A6.014 6.014 0 014.083 11H6.05zm0-2a10 10 0 011.617-4.529A6.014 6.014 0 004.083 9H6.05z" clip-rule="evenodd"></path></g></svg>
-                            <span class="modalanguage" data-phrase-id="modalanguage">Сменить язык</span> 
-                              
-                          
-                            
-                              <div class="contacts__suptitle lang" key="some more text if needed">
-                                <ul>
-                                <div class="contacts__language">
-                                  <li>
-                                    <div class="img-language">
-                                      <svg width="15px" height="15px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" d="M10 2c4.415 0 8 3.585 8 8s-3.585 8-8 8-8-3.585-8-8 3.585-8 8-8zm5.917 9a6.015 6.015 0 01-3.584 4.529A10 10 0 0013.95 11h1.967zm0-2a6.015 6.015 0 00-3.584-4.529A10 10 0 0113.95 9h1.967zm-3.98 0A8.002 8.002 0 0010 4.708 8.002 8.002 0 008.063 9h3.874zm-3.874 2A8.002 8.002 0 0010 15.292 8.002 8.002 0 0011.937 11H8.063zM6.05 11a10 10 0 001.617 4.529A6.014 6.014 0 014.083 11H6.05zm0-2a10 10 0 011.617-4.529A6.014 6.014 0 004.083 9H6.05z" clip-rule="evenodd"></path></g></svg>
-                                    <a href="#en"  onclick="languative.changeLanguage('en');"  data-phrase-id="english" class="language english-hov">English</a></div>
-                                  </li>
-                                  <li>
-                                    <div class="img-language">
-                                      <svg width="15px" height="15px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" d="M10 2c4.415 0 8 3.585 8 8s-3.585 8-8 8-8-3.585-8-8 3.585-8 8-8zm5.917 9a6.015 6.015 0 01-3.584 4.529A10 10 0 0013.95 11h1.967zm0-2a6.015 6.015 0 00-3.584-4.529A10 10 0 0113.95 9h1.967zm-3.98 0A8.002 8.002 0 0010 4.708 8.002 8.002 0 008.063 9h3.874zm-3.874 2A8.002 8.002 0 0010 15.292 8.002 8.002 0 0011.937 11H8.063zM6.05 11a10 10 0 001.617 4.529A6.014 6.014 0 014.083 11H6.05zm0-2a10 10 0 011.617-4.529A6.014 6.014 0 004.083 9H6.05z" clip-rule="evenodd"></path></g></svg>
-                                     <a href="#ru" onclick="languative.changeLanguage('ru')" data-phrase-id="russian" class="language russian-hov">Russian</a></div>
-                                  </li>
-                                </div>
-                                </ul>
-                              </div>              
-                            </div>
-                          </div>
-                        </div>
-                          
-                          <hr style="position: absolute; z-index: 5; width: 265px; margin-top: 130px; margin-left: 6px;"> 
-                          <a href="/login" class="lc-modal">
-                            <div class="lc-modal-pos"><svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path d="M16 18h-4a2 2 0 0 1-1.964-1.622L12 14.414V16h4V4h-4v1.586l-1.964-1.964A2 2 0 0 1 12 2h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2Z"></path><path d="M7.5 6.5 9 5l5 5-5 5-1.5-1.5L10 11H2V9h8L7.5 6.5Z"></path></g></svg>
+                </div>
+                <div class="menu">
+                  <h3 data-phrase-id="menu">Меню</h3>
+                  <ul>
+                    <li>
+                      <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path d="M16 18h-4a2 2 0 0 1-1.964-1.622L12 14.414V16h4V4h-4v1.586l-1.964-1.964A2 2 0 0 1 12 2h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2Z"></path><path d="M7.5 6.5 9 5l5 5-5 5-1.5-1.5L10 11H2V9h8L7.5 6.5Z"></path></g></svg>
                             <g>
                               <path  d="M16 18h-4a2 2 0 0 1-1.964-1.622L12 14.414V16h4V4h-4v1.586l-1.964-1.964A2 2 0 0 1 12 2h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2Z"></path>
                               <path  d="M7.5 6.5 9 5l5 5-5 5-1.5-1.5L10 11H2V9h8L7.5 6.5Z"></path>
                             </g>
+                            <a href="/UserDetails" class="action-outline" style="margin-left: 15px;">My Profile</a>
+                    </li>
+                    <li>
+                      <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" d="M10 2c4.415 0 8 3.585 8 8s-3.585 8-8 8-8-3.585-8-8 3.585-8 8-8zm5.917 9a6.015 6.015 0 01-3.584 4.529A10 10 0 0013.95 11h1.967zm0-2a6.015 6.015 0 00-3.584-4.529A10 10 0 0113.95 9h1.967zm-3.98 0A8.002 8.002 0 0010 4.708 8.002 8.002 0 008.063 9h3.874zm-3.874 2A8.002 8.002 0 0010 15.292 8.002 8.002 0 0011.937 11H8.063zM6.05 11a10 10 0 001.617 4.529A6.014 6.014 0 014.083 11H6.05zm0-2a10 10 0 011.617-4.529A6.014 6.014 0 004.083 9H6.05z" clip-rule="evenodd"></path></g></svg>
+                      <div class="action-outline" style="margin-left: 15px;" onclick="menuToggles();">Change Language <svg style="top: 3px; position: relative;" width="1rem" height="1rem" viewBox="0 0 20 20" fill="currentColor"><path d="M6.5 5.5 11 10l-4.5 4.5L8 16l6-6-6-6-1.5 1.5z"></path></svg>
+                        <div class="action-lang">
+                          <div class="menu-lang">
+                            <h3>    
+                              <ul style="padding: 0;">
+                              <div class="contacts__language">      
+                                  <div class="select__language">
+                                    <button  style="width: 20px; height: 20px; top: 22px; position: relative;">
+                                    <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1q25cff-1 dSicFr" style="left: -7px; top: -2px; position: relative; cursor: pointer; z-index: 3">
+                                      <g>
+                                        <path d="M13.5 14.5L9 10l4.5-4.5L12 4l-6 6 6 6 1.5-1.5z"></path>
+                                      </g>
+                                    </svg>  
+                                  </button>
+                                    <span class="choose__language" data-phrase-id="language">Язык</span>
+                                  </div> 
+                                <li style="padding: 0;">
+                                  <div class="action-selectlanguage" style="opacity: 1;">
+                                    <a href="#en"  onclick="languative.changeLanguage('en');"  data-phrase-id="english" class="language english-hov">
+                                      <img src="src/image/language/flag_en_big.jpg" alt="">
+                                      English</a></div>
+                                </li>
+                                
+                                <li style="padding: 0;">
+                                  <div class="action-selectlanguage" style="opacity: 1;">
+                                   <a href="#ru" onclick="languative.changeLanguage('ru')" data-phrase-id="russian" class="language russian-hov">
+                                    <img src="src/image/language/ru_flag.png" alt="">
+                                    Russian</a></div>
+                                </li>
+                                <li style="padding: 0;">
+                                  <div class="action-selectlanguage" style="opacity: 1;">
+                                   <a href="#es" onclick="languative.changeLanguage('es')" data-phrase-id="spanish" class="language spanish-hov">
+                                    <img src="src/image/language/flag_ispanija_new.jpg" alt="">
+                                    Spanish</a></div>
+                                </li>
+                              </div>
+                              </ul>    
+                            </h3>
+                            <ul>
+                            
+                            </ul>
                           </div>
-                            <span class="lc" data-phrase-id="lc">Личный кабинет</span>
-                          
-                        </a>
+                        </div> 
                       </div>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
-            </div> 
-
-        </li>
-      
+              </div>  
+          </li>  
       </ul>
     </nav>
   </div>
@@ -128,66 +135,134 @@
 
 
 
-<div class="planetss">
+<div class="planetss" onclick="menuRemove();">
     <div class="container">
       <div class="planet__name lang" data-phrase-id="aboutplanetsfromstory">О планетах из сказки :</div>
         <div class="planet__container">
           <div class="planet__pos">
+            
             <div class="planet__inner">
               <div class="planet__img">
+                <section class="message-box-doc">
+                  <div class="container">
+                    <div class="example-empty">
+                      <div class="ui-message-box__wrapper" id="exampleModal">
+                        <div class="ui-message-box">
+                          <div class="ui-message-box__header">
+                            <img src="src/image/planet/uran_03.png" width="20px" height="20px" alt="">
+                            <span class="message-box-title" data-phrase-id="uran">Уран</span><span class="button-close" ></span></div>
+                          <hr style="border: 1px solid rgba(39,39,39,0.2); width: 370px; height: 0px; margin-top: -5px;">
+                          <div class="ui-message-box__content">
+                            <span>Холодная планета, покрытая льдом. Температура на поверхности -224 градуса, а ветры иногда дуют со скоростью 250 метров в секунду. Вас точно сдует с этой планеты.</span>
+                          </div>
+                          <div class="ui-message-box__footer">
+                            <div class="button button-primary">Закрыть</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="button button-light"></div>
+                    </div>
+                  </div>
+                </section>
                 <img src="src/image/planet/uran_03.png" width="50px" height="50px" alt="">
               </div>
               <div class="planet__text" data-phrase-id="uran">Уран
                 
               </div>
-              <div class="planet__burger">
-                <div class="planet__menu">
-                  
-                </div>
-                <span></span>
-              </div>  
             </div>
+
           <div class="planet__inner planet__inner-pos">
             <div class="planet__img">
+              <section class="message-box-doc">
+                <div class="container">
+                  <div class="example-empty">
+                    <div class="ui-message-box__wrapper" id="exampleModal">
+                      <div class="ui-message-box" style="height: 300px;">
+                        <div class="ui-message-box__header">
+                          <img src="src/image/planet/mars_03.png" width="20px" height="20px" alt="">
+                          <span class="message-box-title" data-phrase-id="mars">Марс</span><span class="button-close" ></span></div>
+                        <hr style="border: 1px solid rgba(39,39,39,0.2); width: 370px; height: 0px; margin-top: -5px;">
+                        <div class="ui-message-box__content">
+                          <span>Марс также называется красной планетой. Там очень часто случаются пыльевые бури. По мнению учёных, Марс мог быть когда-то обитаемым. Существует много идей и проектов по терраформации Марса, то есть превращение его в землеподобную и пригодную для проживания планету. Кто знает, может однажды мы будем там жить?</span>
+                        </div>
+                        <div class="ui-message-box__footer">
+                          <div class="button button-primary">Закрыть</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button button-light"></div>
+                  </div>
+                </div>
+              </section>
+              
+              
               <img src="src/image/planet/mars_03.png" width="50px" height="50px" alt="">
             </div>
             <div class="planet__text lang" data-phrase-id="mars">Марс
               
             </div>  
-            <div class="planet__burger">
-              <div class="planet__menu">
-                
-              </div>
-              <span></span>
-            </div>  
           </div>
+
           <div class="planet__inner planet__inner-pos" style="margin-left: -5px;">
             <div class="planet__img">
+              <section class="message-box-doc">
+                <div class="container">
+                  <div class="example-empty">
+                    <div class="ui-message-box__wrapper" id="exampleModal2">
+                      <div class="ui-message-box" style="height: 280px;">
+                        <div class="ui-message-box__header">
+                          <img src="src/image/planet/saturn.png" width="20px" height="20px" alt="">
+                          <span class="message-box-title" data-phrase-id="saturn">Сатурн</span><span class="button-close" ></span></div>
+                        <hr style="border: 1px solid rgba(39,39,39,0.2); width: 370px; height: 0px; margin-top: -5px;">
+                        <div class="ui-message-box__content">
+                          <span>Ещё один газовый гигант. У него тоже есть свой пояс астероидов. Выглядит как халахуп. У Сатурна аж 83 спутника! Самый примечательный из них это Титан. Там есть вода в жидком виде, правда состоит она из метана, который ни в коем случае нельзя пить.</span>
+                        </div>
+                        <div class="ui-message-box__footer">
+                          <div class="button button-primary">Закрыть</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button button-light"></div>
+                  </div>
+                </div>
+              </section>
+              
+              
               <img src="src/image/planet/saturn.png" width="60px" alt="">
             </div>
             <div class="planet__text lang" data-phrase-id="saturn" style="margin-left: -5px;">Сатурн
              
-            </div> 
-            <div class="planet__burger">
-              <div class="planet__menu">
-                
-              </div>
-              <span></span>
-            </div>          
+            </div>           
           </div>
+
           <div class="planet__inner planet__inner-pos">
             <div class="planet__img">
+              <section class="message-box-doc">
+                <div class="container">
+                  <div class="example-empty">
+                    <div class="ui-message-box__wrapper" id="exampleModal2">
+                      <div class="ui-message-box">
+                        <div class="ui-message-box__header">
+                          <img src="src/image/planet/jupiter_03.png" width="20px" height="20px" alt="">
+                          <span class="message-box-title" data-phrase-id="jupiter">Юпитер</span><span class="button-close" ></span></div>
+                          <hr style="border: 1px solid rgba(39,39,39,0.2); width: 370px; height: 0px; margin-top: -5px;">
+                        <div class="ui-message-box__content">
+                          <span>Самая большая планета нашей солнечной системы. Также именуется газовым гигантом. Планета имеет огромный пояс астероидов. У Юпитера 80 естественных спутников (лун), некоторые из которых очень красивые, например Каллисто и Ио.</span>
+                        </div>
+                        <div class="ui-message-box__footer">
+                          <div class="button button-primary">Закрыть</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button button-light"></div>
+                  </div>
+                </div>
+              </section>
               <img src="src/image/planet/jupiter_03.png" width="50px" alt="">
             </div>
             <div class="planet__text lang" data-phrase-id="jupiter">Юпитер
              
-            </div>   
-            <div class="planet__burger">
-              <div class="planet__menu">
-               
-              </div>
-              <span></span>
-            </div>          
+            </div>           
           </div>
         </div>
 
@@ -196,71 +271,132 @@
                   <div class="planet__pos">
                     <div class="planet__inner">
                       <div class="planet__img">
-                        <img src="src/image/planet/IMG_2605-1_03.png" width="50px" alt="">
+                        <section class="message-box-doc">
+                          <div class="container">
+                            <div class="example-empty">
+                              <div class="ui-message-box__wrapper" id="exampleModal2">
+                                <div class="ui-message-box">
+                                  <div class="ui-message-box__header">
+                                    <img src="src/image/planet/IMG_2605-1_03.png" width="20px" height="20px" alt="">
+                                    <span class="message-box-title" data-phrase-id="neptune">Нептун</span><span class="button-close" ></span></div>
+                                    <hr style="border: 1px solid rgba(39,39,39,0.2); width: 370px; height: 0px; margin-top: -5px;">
+                                  <div class="ui-message-box__content">
+                                    <span>Ещё один ледяной гигант. А на нём скорость ветра 600 метров в секунду. Нептун в четыре раза больше Земли и он весь голубого цвета.</span>
+                                  </div>
+                                  <div class="ui-message-box__footer">
+                                    <div class="button button-primary">Закрыть</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button button-light"></div>
+                            </div>
+                          </div>
+                        </section>
+                        <img src="src/image/planet/IMG_2605-1_03.png" width="55px" alt="">
                       </div>
                       <div class="planet__text lang" data-phrase-id="neptune">Нептун
                        
-                      </div> 
-                      <div class="planet__burger" style="position: relative; right: 121px;">
-                        <div class="planet__menu">
-                        
-                        </div>
-                        <span></span>
-                      </div>        
+                      </div>       
                     </div>
                    
                     <div class="planet__inner planet__inner-pos">
                       <div class="planet__img">
+                        <section class="message-box-doc">
+                          <div class="container">
+                            <div class="example-empty">
+                              <div class="ui-message-box__wrapper" id="exampleModal2">
+                                <div class="ui-message-box">
+                                  <div class="ui-message-box__header">
+                                    <img src="src/image/planet/pluto_03.png" width="20px" height="20px" alt="">
+                                    <span class="message-box-title" data-phrase-id="pluto">Плутон</span><span class="button-close" ></span></div>
+                                    <hr style="border: 1px solid rgba(39,39,39,0.2); width: 370px; height: 0px; margin-top: -5px;">
+                                  <div class="ui-message-box__content">
+                                    <span>Самая дальняя и самая маленькая планета в нашей солнечной системе. Состоит из металла и льда. Там холодно. Очень холодно. Плутон находится на границе нашей солнечной системы, а за ним — необъятный космос.</span>
+                                  </div>
+                                  <div class="ui-message-box__footer">
+                                    <div class="button button-primary">Закрыть</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button button-light"></div>
+                            </div>
+                          </div>
+                        </section>
                         <img src="src/image/planet/pluto_03.png" width="50px" height="50px" alt="">
                       </div>
                       <div class="planet__text lang" data-phrase-id="pluto">Плутон
                         
-                      </div>  
-                      
-                      <div class="planet__burger" style="position: relative; right: 108px;">
-                        <div class="planet__menu"></div>
-                        <span></span>           
-                      </div>        
-                   
+                      </div>                                                                  
                   </div>
+
                     <div class="planet__inner planet__inner-pos" >
                       <div class="planet__img">
-                        <img src="src/image/planet/ventus_11.png" width="50px" alt="">
+                        <section class="message-box-doc">
+                          <div class="container">
+                            <div class="example-empty">
+                              <div class="ui-message-box__wrapper" id="exampleModal2">
+                                <div class="ui-message-box">
+                                  <div class="ui-message-box__header">
+                                    <img src="src/image/planet/ventus_11.png" width="20px" height="20px" alt="">
+                                    <span class="message-box-title" data-phrase-id="venus">Венера</span><span class="button-close" ></span></div>
+                                    <hr style="border: 1px solid rgba(39,39,39,0.2); width: 370px; height: 0px; margin-top: -5px;">
+                                  <div class="ui-message-box__content">
+                                    <span>Самая горячая планета в нашей солнечной системе. Она также и самая яркая. Венера названа так в честь богини женственности и любви. </span>
+                                  </div>
+                                  <div class="ui-message-box__footer">
+                                    <div class="button button-primary">Закрыть</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button button-light"></div>
+                            </div>
+                          </div>
+                        </section>
+                        <img src="src/image/planet/ventus_11.png" width="55px" alt="">
                       </div>
                       <div class="planet__text lang" data-phrase-id="venus">Венера
                         
-                      </div>  
-                      <div class="planet__burger" style="position: relative; right: 108px;">
-                        <div class="planet__menu">
-                          
-                        </div>
-                        <span></span>
-                      </div>           
+                      </div>            
                     </div>
+
                     <div class="planet__inner planet__inner-pos">
                       <div class="planet__img">
+                        <section class="message-box-doc">
+                          <div class="container">
+                            <div class="example-empty">
+                              <div class="ui-message-box__wrapper" id="exampleModal2">
+                                <div class="ui-message-box">
+                                  <div class="ui-message-box__header">
+                                    <img src="src/image/planet/mercury_03_07.png" width="20px" height="20px" alt="">
+                                    <span class="message-box-title" data-phrase-id="mercury">Меркурий</span><span class="button-close" ></span></div>
+                                    <hr style="border: 1px solid rgba(39,39,39,0.2); width: 370px; height: 0px; margin-top: -5px;">
+                                  <div class="ui-message-box__content">
+                                    <span>Самая ближайшая к Солнцу планета. Год там длится всего 88 дней. И день может длится столько же. Там очень много кратеров. Также, на Меркурии нет разных сезонов года. Там всё время осень. </span>
+                                  </div>
+                                  <div class="ui-message-box__footer">
+                                    <div class="button button-primary">Закрыть</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button button-light"></div>
+                            </div>
+                          </div>
+                        </section>
                         <img src="src/image/planet/mercury_03_07.png" width="50px" height="50px" alt="">
                       </div>
+                      
                       <div class="planet__text lang" data-phrase-id="mercury">Меркурий
                         
                       </div> 
-                      <div class="planet__burger" style="position: relative; right: 108px;">
-                        <div class="planet__menu">
-                         
-                        </div>
-                        <span></span>
-                      </div>                
                     </div>
-                  </div>
+            </div>
         </div>
     </div>
+    
 </div>
-
-
-              
-                            <!-- Шестой блок -->
+<!-- Шестой блок -->
                            
-<div class="contacts" id="sec-1">
+<div class="contacts" id="sec-1" onclick="menuRemove();"  onclick="menuToggles();">
   <div class="container">
   <div class="contacts__soc_container">
     <div class="contacts__inner">
@@ -273,23 +409,26 @@
         <div class="contacts__soc">
           <a href="" class="fixed__touch">
             <div class="fixed__img-viber">
-              <div class="fixed__text" data-phrase-id="subscribe">Подписаться</div>
+              
               </div>
             </a>
           </div>
           <div class="contacts__soc">
             <a href="" class="fixed__touch">
               <div class="fixed__img-yo">
-                <div class="fixed__text lang" data-phrase-id="subscribe">Подписаться</div>
+             
               </div>
             </a>
           </div>
           <div class="contacts__soc">
             <a href="" class="fixed__touch">
               <div class="fixed__img-vk">
-                <div class="fixed__text lang" data-phrase-id="subscribe">Подписаться</div>
+               
               </div>
             </a>
+          </div>
+          <div class="contacts__img">
+            <img src="src/image/intro/IMG_2609-1_03.png" alt="" width="200px">
           </div>
         </div>
       </div>
@@ -329,7 +468,14 @@
                                                           </a>
                                                         </div>
                                                       </div>
-                                                  
+                  
+                                                      
+
+
+
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="src/js/sliderVideo.js"></script>   
@@ -337,5 +483,23 @@
 <script src="src/js/lang.js"></script>
 <script src="src/js/auth.js"></script>
 <script src="../src/App.js"></script>
+<script src="src/js/planets.js"></script>
 
+
+<script>
+
+  function menuToggle(){
+  const toggleMenu = document.querySelector('.menu');
+  toggleMenu.classList.toggle('active');
+}
+function menuRemove(){
+  const removeMenu = document.querySelector('.menu');
+  removeMenu.classList.remove('active');
+}
+
+function menuToggles(){
+  const toggleMenus = document.querySelector('.menu-lang');
+  toggleMenus.classList.toggle('active');
+}
+</script>                 
 </body></html>

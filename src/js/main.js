@@ -18,15 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 
-// Облако в планетах
 
-
-$(document).ready(function() {
-    $('.planet__burger').click(function(event) {
-        $('.planet__burger, .planet__menu').toggleClass('active');
-        $('body').toggleClass('lock');
-    });
-});
 
 
 
@@ -46,7 +38,4 @@ showMore.addEventListener('click', () => {
 		showMore.style.display = 'none';
 	}
 });
-
-
-
 
