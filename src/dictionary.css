@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     margin-left: -60px;
     max-width: 310px;
- 
+    
 }
 
 
@@ -144,29 +144,50 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	right: 0;
 	z-index: 2002;
-	background-color: rgba(39,39,39,0.48);
+	background-color: rgba(39,39,39,0.7);
+    transition: all 1s ease;
 }
 
 .ui-message-box {
 	display: block;
 	position: fixed;
-	top: 20%;
+	top: 10%;
 	left: 50%;
-	background-size: 500px;
 	transform: translateX(-50%);
 	padding: 12px 14px;
-	background: white;
+    transition: all 1s ease;
 	border-radius: 8px;
     height: 250px;
     width: 300px;
 	z-index: 2000;
 	transition: all 1s ease;
-	
+	position: relative;
+    z-index: 100;
+}
+
+.ui-message-box span{
+    margin-top: -20px;
+	position: relative;
+    z-index: 100;
+    max-width: 800px;
+    transition: all 1s ease;
+}
+
+.ui-message-box img {
+    width: 700px;
+    margin: 0 auto 0 ;
+    left: -240px;
+    position: relative;
+    top: 260px;
+    transition: all 1s ease;
 }
 
 .ui-message-box .button-close {
 	width: 22px;
 	height: 22px;
+    position: relative;
+    z-index: 100;
+    transition: all 1s ease;
 }
 
 .ui-message-box__header {
@@ -180,6 +201,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     font-weight: 300;
     margin-top: -3px;
+    position: relative;
+    z-index: 100;
+    transition: all 1s ease;
 }
 
 .ui-message-box__content {
@@ -187,6 +211,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 0 5px;
     margin-top: 20px;
+    position: relative;
+    z-index: 100;
+    transition: all 1s ease;
 }
 
 
@@ -194,12 +221,14 @@ h1, h2, h3, h4, h5, h6 {
 .ui-message-box__footer {
 	text-align: right;
   cursor: pointer;
+  transition: all 1s ease;
 }
 
 .message-box-title {
 	font-size: rem(24);
     margin: 0 auto 0;
-
+    margin-top: -20px;
+    transition: all 1s ease;
 }
 
 .button-light {
@@ -210,6 +239,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     margin-left: -25px;
     z-index: 100;
+    transition: all 1s ease;
 }
 
 
@@ -217,25 +247,28 @@ h1, h2, h3, h4, h5, h6 {
 .button-primary {
     border: 2px solid black;
     text-align: center;
-    border-radius: 5px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
     padding: 5px;
-    width: 100%;   
-    position: absolute;
+    width: 30%;  
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: center;
     bottom: 0px;
     left: 0;
+    position: relative;
+    z-index: 100;
+    transition: all 1s ease;
 }
 .button-primary::before {
     content: '';
-    
+    transition: all 1s ease;
 }
 
 .ui-flex {
     display: flex;
     position: relative;
     top: 5px;
-
+    transition: all 1s ease;
 }
 
 
