@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .planet__container {
-    max-width: 1000px;
+    max-width: 700px;
     padding: 0 25px;
     margin: 0 auto;
     display: flex;
@@ -95,20 +95,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
+.planet_away { 
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
 
 
 .planet__inner {
     position: relative;
-    top: 250px;
-    display: flex;
-    justify-content: flex-start;
-    
-}
-
-.planet__inner-pos {
+    top: 200px;
     margin: 40px 0;
 }
+
+
 
 
 
@@ -148,16 +150,18 @@ h1, h2, h3, h4, h5, h6 {
 .ui-message-box {
 	display: block;
 	position: fixed;
-	top: 50%;
+	top: 20%;
 	left: 50%;
-	min-width: 400px;
+	background-size: 500px;
 	transform: translateX(-50%);
 	padding: 12px 14px;
-	background: url(../src/image/null.png) center no-repeat;
+	background: white;
 	border-radius: 8px;
+    height: 250px;
+    width: 300px;
 	z-index: 2000;
-	animation: fadeInDown 0.3s;
-	overflow: hidden;
+	transition: all 1s ease;
+	
 }
 
 .ui-message-box .button-close {
@@ -171,11 +175,21 @@ h1, h2, h3, h4, h5, h6 {
 	justify-content: space-between;
 	padding-bottom: 8px;
 	margin-bottom: 8px;
+    margin-left: 10px;
+    font-family: 'Nerko One';
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -3px;
 }
 
 .ui-message-box__content {
 	margin-bottom: 16px;
+    text-align: center;
+    padding: 0 5px;
+    margin-top: 20px;
 }
+
+
 
 .ui-message-box__footer {
 	text-align: right;
@@ -184,6 +198,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .message-box-title {
 	font-size: rem(24);
+    margin: 0 auto 0;
+
 }
 
 .button-light {
@@ -199,16 +215,28 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .button-primary {
-    border: 1px solid black;
-    width: 35px;
-    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px;
+    width: 100%;   
+    position: absolute;
+    bottom: 0px;
+    left: 0;
 }
 .button-primary::before {
     content: '';
     
 }
 
+.ui-flex {
+    display: flex;
+    position: relative;
+    top: 5px;
 
+}
 
 
 
